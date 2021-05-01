@@ -16,7 +16,7 @@
 
 
 - 명령어 [WSL-Ubuntu 기준]: 
-  - sudo apt-get insatll python3-venv : 파이썬 가상환경 설치시 필요함.
+  - sudo apt-get install python3-venv : 파이썬 가상환경 설치시 필요함.
   - python3 -m venv `가상환경이름` : 가상환경이름으로 가상환경 폴더를 만듬
   - source(.으로 대체 가능함) `가상환경이름`/bin/activate : 가상환경 켜기
   - deactivate : 가상환경 종료
@@ -31,7 +31,7 @@
     - STATICFILES_DIRS = (os.path.join(BASE_DIR,'static'),)을 추가해주기
   - 앱 폴더 내에 templates,static 폴더 만들기 : mkdir templates static
   - 앱폴더 내의 views.py : `html이름.html`을 렌더해주는 `html이름`(request) 함수를 설정해주기
-    - home(request): return render(request,'`html이름.html`)
+    - home(request): return render(request,'`html이름.html`')
   - 프로젝트 폴더 내의 urls.py: urlpatterns 리스트 내에 path('', `앱이름`.views.`html이름`, name = `html이름`), 추가해주기
   - 
 
